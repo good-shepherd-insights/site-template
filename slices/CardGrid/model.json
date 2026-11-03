@@ -1,0 +1,32 @@
+{
+  "id": "card_grid",
+  "type": "SharedSlice",
+  "name": "CardGrid",
+  "description": "A heading above a repeatable grid of cards",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "https://prismic.io/docs/slice",
+      "version": "initial",
+      "description": "Heading plus repeatable cards",
+      "imageUrl": "",
+      "primary": {
+        "heading": {
+          "type": "StructuredText",
+          "config": { "label": "Heading", "single": "heading2" }
+        }
+      },
+      "items": {
+        "title": {
+          "type": "StructuredText",
+          "config": { "label": "Card title", "single": "heading3" }
+        },
+        "text": {
+          "type": "StructuredText",
+          "config": { "label": "Card text", "multi": "paragraph" }
+        }
+      }
+    }
+  ]
+}

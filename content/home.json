@@ -1,0 +1,42 @@
+{
+  "type": "page",
+  "uid": "home",
+  "lang": "en-us",
+  "title": "Home",
+  "data": {
+    "slices": [
+      {
+        "slice_type": "hero",
+        "variation": "default",
+        "primary": {
+          "heading": [{ "type": "heading1", "text": "Your new site", "spans": [] }],
+          "body": [
+            {
+              "type": "paragraph",
+              "text": "This page came from the template and lives in your own Prismic repository. Edit it there and it changes here.",
+              "spans": []
+            }
+          ]
+        },
+        "items": []
+      },
+      {
+        "slice_type": "card_grid",
+        "variation": "default",
+        "primary": {
+          "heading": [{ "type": "heading2", "text": "What we do", "spans": [] }]
+        },
+        "items": [
+          {
+            "title": [{ "type": "heading3", "text": "First service", "spans": [] }],
+            "text": [{ "type": "paragraph", "text": "Describe it here.", "spans": [] }]
+          },
+          {
+            "title": [{ "type": "heading3", "text": "Second service", "spans": [] }],
+            "text": [{ "type": "paragraph", "text": "Describe it here.", "spans": [] }]
+          }
+        ]
+      }
+    ]
+  }
+}
