@@ -1,13 +1,14 @@
 import { PrismicRichText } from "@prismicio/react";
-import type { Content } from "@prismicio/client";
+import type { RichTextField } from "@prismicio/client";
 
-// Typed against the library's own SharedSlice shape rather than a generated namespace: the
-// generated `Content` types only exist after `prismic gen` has run inside a project, which
-// never happens in a template.
+// Typed with the library's own exported RichTextField, NOT the generated `Content`
+// namespace: that namespace only exists after `prismic gen` has run inside a project, which
+// never happens in a template. Importing it compiles locally and fails the build with
+// "Module '@prismicio/client' has no exported member 'Content'" — observed, not assumed.
 type HeroSlice = {
   slice_type: "hero";
   variation: string;
-  primary: { heading: Content.RichTextField; body: Content.RichTextField };
+  primary: { heading: RichTextField; body: RichTextField };
 };
 
 export default function Hero({ slice }: { slice: HeroSlice }) {

@@ -1,11 +1,11 @@
 import { PrismicRichText } from "@prismicio/react";
-import type { Content } from "@prismicio/client";
+import type { RichTextField } from "@prismicio/client";
 
 type CardGridSlice = {
   slice_type: "card_grid";
   variation: string;
-  primary: { heading: Content.RichTextField };
-  items: { title: Content.RichTextField; text: Content.RichTextField }[];
+  primary: { heading: RichTextField };
+  items: { title: RichTextField; text: RichTextField }[];
 };
 
 export default function CardGrid({ slice }: { slice: CardGridSlice }) {
