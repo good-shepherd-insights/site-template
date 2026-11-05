@@ -1,3 +1,4 @@
 {
-  "prismicRepositoryEnv": "NEXT_PUBLIC_PRISMIC_REPOSITORY"
+  "prismicRepositoryEnv": "NEXT_PUBLIC_PRISMIC_REPOSITORY",
+  "framework": "nextjs"
 }
